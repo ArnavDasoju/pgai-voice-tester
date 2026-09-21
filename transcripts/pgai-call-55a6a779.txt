@@ -1,0 +1,18 @@
+[0:09] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:14] PATIENT (bot): Um, okay. I'm calling to book an appointment for knee pain. Can I do that?
+[0:26] CLINIC AGENT: You can book an appointment but first, you'll need to create a demo patient profile. Would you like to set one up now? I just need your first and last name.
+[0:32] PATIENT (bot): Yeah, my name is Arnav Dasoju. Can we just get to the appointment for my knee pain?
+[0:41] CLINIC AGENT: Let me finish setting up your profile, then I'll help you book the appointment for your knee pain. One moment.
+[0:45] PATIENT (bot): Um, okay. How long is this gonna take?
+[0:48] CLINIC AGENT: Your patient profile is set up, and your date of birth is July fourth two thousand. How can I help you today?
+[0:56] PATIENT (bot): Actually, my birthday is August 9th, 2007. But, um, I want to book an appointment for my knee pain. Can we do that?
+[1:10] CLINIC AGENT: Yes. We can book an appointment for your knee pain. This would be an acute visit since it needs prompt attention. Let me confirm. Are you looking to be seen for knee pain as soon as possible?
+[1:17] PATIENT (bot): Um, yeah, ideally sometime next week. Mornings would be best. Do you have anything like that?
+[1:51] CLINIC AGENT: Let me check the schedule for morning appointments next week for your knee pain. One moment. Yes. There are morning appointments next week. On Monday, September twenty eighth, you can see doctor Zignia Lukowski at eight eight fifteen eight thirty, or eight forty five AM. Would you like to book one of these times, or would you prefer a different day? Yes. There are morning appointments available next week. Would you prefer to see doctor Zigniewiczkovsky or doctor Kelly Noble, or is either one fine?
+[1:59] PATIENT (bot): Um, I think I’d prefer Dr. Zignia Lukowski on Monday at 8:15. Can we do that?
+[2:24] CLINIC AGENT: Your appointment is set for Monday, September twenty eighth at eight fifteen AM with doctor Zedmu Lukowski at Pivot Point Orthopedics. Please bring your photo ID insurance card, a list of your current medications, and any imaging disc you have. Would you like me to send you a text message with these details?
+[2:33] PATIENT (bot): Um, yeah, a text would be great. Thanks. So, just to confirm, it's Monday at 8:15 with Dr. Lukowski, right?
+[2:48] CLINIC AGENT: That's right. Your appointment is Monday at eight AM with doctor Zebigniew Lukowski. You'll get a text with all the details. Let me know if you need anything else.
+[2:55] PATIENT (bot): Um, actually, I think it was 8:15. But okay, thanks for your help. Goodbye!
+[3:03] CLINIC AGENT: You are correct. Your appointment is at eight fifteen AM. Take care, and goodbye.
+[3:05] PATIENT (bot): Thanks! Goodbye!

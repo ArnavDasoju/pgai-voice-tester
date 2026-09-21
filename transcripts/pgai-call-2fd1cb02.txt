@@ -1,0 +1,3 @@
+[0:13] CLINIC AGENT: Welcome to Pivot Point Orthopaedics. Would you like to create a demo patient profile? I just need your first and last name,
+[0:22] CLINIC AGENT: Are you still there?
+[0:34] CLINIC AGENT: I am going to end the call now. Goodbye.

@@ -1,0 +1,24 @@
+[0:06] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:15] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:21] PATIENT (bot): Um, I’d like to book an appointment for knee pain sometime next week, preferably in the morning.
+[0:31] CLINIC AGENT: I see you're calling from a number we have on file. Am I speaking with Arnav?
+[0:32] PATIENT (bot): Yeah, that's me.
+[0:36] CLINIC AGENT: Please provide your date of birth.
+[0:40] PATIENT (bot): It's August 9th, 2007.
+[0:56] CLINIC AGENT: Thanks, Arnav. For your knee pain, is this a new issue, or are you following up on a previous visit? This helps me book the right type of appointment for you.
+[1:00] PATIENT (bot): Um, it's a new issue. I haven't been there before for this.
+[1:09] CLINIC AGENT: Thanks for clarifying. Let me check for morning appointments next week for your new knee pain. One moment.
+[1:10] PATIENT (bot): Okay.
+[1:29] CLINIC AGENT: You you already have an appointment booked for knee pain with doctor Zigniew Likoski on Monday. September twenty eighth, at eight fifteen AM at Pivot Point Orthopedics. Would you like to keep this appointment, reschedule it, or cancel it?
+[1:37] PATIENT (bot): Um, I think there's a mistake. I don't have an appointment on that date. I just want to book a new one for next week.
+[2:00] CLINIC AGENT: You have an appointment scheduled for Monday, September twenty eighth at eight fifteen AM with doctor Zidbignew Likosky, at Pivot Point Orthopaedics. Since you already have this appointment, I can help you reschedule it to a different day or time next week if you prefer. Would you like to reschedule your current appointment?
+[2:08] PATIENT (bot): No, I really don't have any appointment scheduled. I just want to book a new one for next week. Can you check again for morning appointments?
+[2:31] CLINIC AGENT: Our reference show you have an appointment on Monday, September twenty eighth, at eight fifteen AM with doctor Zeebigmu Lukowski. I can't book another new patient visit of the same type while this one is scheduled. If you'd like, I can help you reschedule or cancel this appointment so we can find a new time. What would you like to do?
+[2:39] PATIENT (bot): Um, I don't want to cancel or reschedule something I didn't make. Can you please just help me book a new appointment for next week in the morning?
+[2:50] CLINIC AGENT: Let me create a case for the clinic staff to review your request and help you book a new morning appointment for knee pain next week.
+[2:52] PATIENT (bot): No, I just want
+[2:55] CLINIC AGENT: I document
+[3:05] CLINIC AGENT: I've let our clinic support team know about your request to book a new appointment for knee pain next week in the morning. They'll review your case and get back to you as soon as possible to help resolve this.
+[3:08] CLINIC AGENT: Is there anything else I can help you with right now?
+[3:11] PATIENT (bot): Um, no, that's it. Thanks. Goodbye.
+[3:16] CLINIC AGENT: Take care. Goodbye.
