@@ -1,0 +1,15 @@
+# Scenario: 11_cancel
+# Goal: Cancel your upcoming knee appointment, whatever date it is on now, because the pain went away.
+# Recording: recordings/11_cancel-d13f8c.ogg
+
+[0:02] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:06] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI? How may I help you today?
+[0:15] PATIENT (bot): Um, yeah so, I need to cancel my upcoming knee appointment with Dr. Lukowski. I don’t remember the exact date or time since it was moved recently.
+[0:26] CLINIC AGENT: I can help with that. May I have your full name and date of birth?
+[0:31] PATIENT (bot): Sure, it's Arnav Dasoju, and my date of birth is August 9th, 2007.
+[0:42] CLINIC AGENT: I do not see any upcoming appointments scheduled for you right now. Would you like to book a new appointment? Or check something else?
+[0:49] PATIENT (bot): Um, no, I definitely had an appointment scheduled. Can you check again? It's with Dr. Lukowski for my knee.
+[0:58] CLINIC AGENT: I still do not see any upcoming appointments for you. Even with doctor Lukowski. Would you like me to document this for our clinic support team to review and follow-up with you?
+[1:09] PATIENT (bot): No, I just want to cancel the appointment I know I had. Could you please confirm if there's any appointment under my name, Arnav Dasoju, with my date of birth?
+[1:19] CLINIC AGENT: I'm unable to cancel your appointment through the system. I'll connect you to our patient support team so they can help you right away. Please stay on the line.
+[1:39] CLINIC AGENT: I'm to turn you now. Thank you.
