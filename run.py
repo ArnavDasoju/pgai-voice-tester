@@ -64,13 +64,23 @@ async def place_call(lk: api.LiveKitAPI, name: str) -> None:
     started = time.monotonic()
     while time.monotonic() - started < MAX_CALL_SECONDS:
         await asyncio.sleep(3)
-        rooms = await lk.room.list_rooms(api.ListRoomsRequest(names=[room]))
-        if not rooms.rooms:
-            print(f"=== {name}: call ended after {int(time.monotonic() - started)}s ===", flush=True)
-            return
+        try:
+            res = await lk.room.list_participants(api.ListParticipantsRequest(room=room))
+        except Exception:
+            break  # room is already gone
+        if not any(p.identity == "clinic-agent" for p in res.participants):
+            # The phone call is over. Close the room so the agent shuts down and saves the recording.
+            try:
+                await lk.room.delete_room(api.DeleteRoomRequest(room=room))
+            except Exception:
+                pass
+            break
+    else:
+        print(f"=== {name}: hit the {MAX_CALL_SECONDS}s limit, hanging up ===", flush=True)
+        await lk.room.delete_room(api.DeleteRoomRequest(room=room))
 
-    print(f"=== {name}: hit the {MAX_CALL_SECONDS}s limit, hanging up ===", flush=True)
-    await lk.room.delete_room(api.DeleteRoomRequest(room=room))
+    print(f"=== {name}: call ended after {int(time.monotonic() - started)}s ===", flush=True)
+    await asyncio.sleep(4)  # give the recording a moment to save
 
 
 async def main():

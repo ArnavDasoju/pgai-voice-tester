@@ -30,6 +30,16 @@ from livekit.plugins import cartesia, deepgram, noise_cancellation, openai, sile
 load_dotenv(".env.local")
 logger = logging.getLogger("patient-bot")
 
+
+class _DropStreamNoise(logging.Filter):
+    """The hidden recorder receives LiveKit's internal data streams and logs each one. Hide that spam."""
+
+    def filter(self, record):
+        return not record.getMessage().startswith("ignoring ")
+
+
+logging.getLogger().addFilter(_DropStreamNoise())
+
 TRANSCRIPT_DIR = Path("transcripts")
 RECORDING_DIR = Path("recordings")
 TRANSCRIPT_DIR.mkdir(exist_ok=True)
@@ -230,7 +240,7 @@ async def entrypoint(ctx: JobContext):
     ctx.add_shutdown_callback(finish)
 
     session = AgentSession(
-        stt=deepgram.STT(model="nova-3", language="en", keyterms=KEYTERMS),
+        stt=deepgram.STT(model="nova-3", language="en", keyterm=KEYTERMS),
         llm=openai.LLM(model="gpt-4o-mini", temperature=0.8),
         tts=cartesia.TTS(model="sonic-2"),
         vad=silero.VAD.load(),
