@@ -1,0 +1,25 @@
+# Scenario: 11_cancel
+# Goal: Cancel your upcoming knee appointment, whatever date it is on now, because the pain went away.
+# Recording: recordings/11_cancel-a8a08f.ogg
+
+[0:02] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:09] PATIENT (bot): Um, hi.
+[0:09] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. How may I help you today?
+[0:15] PATIENT (bot): Yeah, so I need to cancel my upcoming knee appointment with Dr. Lukowski. I’m not sure about the date or time since it got moved.
+[0:25] CLINIC AGENT: I'll need to look up your chart to check your appointment detail. Can you please provide your full name and date of birth?
+[0:32] PATIENT (bot): My name is Arnav Dasoju, and my date of birth is August 9th, 2007.
+[0:47] CLINIC AGENT: I don't see any upcoming appointments scheduled for you right now. Would you like to book a new appointment or check something else?
+[0:54] PATIENT (bot): Um, can you double-check that? I know I had an appointment scheduled with Dr. Lukowski.
+[1:02] CLINIC AGENT: I checked your chart and there are no upcoming appointments listed. Doctor Lukowski is not shown as one of our providers here at Pivot Point Orthopedics. Is it possible the appointment was with a different clinic or provider?
+[1:15] CLINIC AGENT: If you'd like, I can help you schedule a new appointment here.
+[1:18] PATIENT (bot): No, I’m pretty sure it was here. Could you please just confirm my details instead? My name is Arnav Dasoju, date of birth August 9th, 2007, and my phone number is (762) 247-4589.
+[1:34] CLINIC AGENT: I have your name as Arnav Desoju. Date of birth, August ninth two thousand and seven. And your phone number as seven six two two four seven four five eight nine Is that correct?
+[1:48] PATIENT (bot): No, it's Arnav Dasoju, not Desoju. And the phone number is (762) 247-4589.
+[1:59] CLINIC AGENT: Thank you for clarifying. I have your name as Arnav Desoju and your phone number as seven six two two four seven four five eight nine
+[2:10] PATIENT (bot): No, it's Arnav Dasoju with the phone number (762) 247-4589. Can you just confirm if you see my appointment now?
+[2:23] CLINIC AGENT: I checked again. And there are still no upcoming appointments listed for you at Pivot Point Orthopedics. You like to schedule a new appointment? Or need help with something else?
+[2:34] PATIENT (bot): Um, no, I need to cancel an appointment. I know I had one scheduled. Can you check one more time?
+[2:45] CLINIC AGENT: I checked your chart once more. And there are no upcoming appointments scheduled. If you believe there's an error, I can document your request for our clinic support team to review and follow-up with you. Would you like me to do that?
+[2:59] PATIENT (bot): No, that’s okay. I’ll just call back if I need to. Thanks for your help. Goodbye.
+[3:05] PATIENT (bot): Sorry, I've gotta run.
+[3:06] CLINIC AGENT: Well.

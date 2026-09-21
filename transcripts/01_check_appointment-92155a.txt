@@ -1,0 +1,15 @@
+# Scenario: 01_check_appointment
+# Goal: Find out when your next appointment is, which doctor it is with, and what you should bring.
+# Recording: recordings/01_check_appointment-92155a.ogg
+
+[0:04] CLINIC AGENT: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:17] PATIENT (bot): Um, hi. I want to check on my appointment. I have a knee pain appointment with Dr. Lukowski on Monday, September 28 at 8:15 AM. Can you confirm that?
+[0:29] CLINIC AGENT: I can help with that. May I have your full name and date of birth?
+[0:33] PATIENT (bot): Yeah, my name is Arnav Dasoju and my date of birth is August 9, 2007.
+[0:47] CLINIC AGENT: I do not see any upcoming appointments scheduled for you right now. Would you like to book an appointment with doctor Lukowski for Monday, September twenty eighth at eight fifteen AM
+[1:01] PATIENT (bot): Um, I already have that appointment booked. Can you double-check for me? It's for knee pain with Dr. Lukowski.
+[1:11] CLINIC AGENT: I checked your records, and there are no upcoming appointments scheduled. If you believe there should be one, I can help you book it now or connect you with our clinic support team to look into this further. What would you like to do?
+[1:29] PATIENT (bot): I just want to make sure I have the right details. Can you give me the appointment time and doctor again? I know I scheduled it before.
+[1:39] CLINIC AGENT: I do not see any upcoming appointments in your records. So I am unable to confirm a date, time, or provider. Would you like to book a new appointment for knee pain with doctor Lukowski? Or should I connect you to our clinic support team to help investigate?
+[1:57] PATIENT (bot): Um, I guess I have to get it checked out. Can you connect me to the clinic support team?
+[2:05] CLINIC AGENT: Transferring you now. Hello. You've reached the Pretty Good AI test line. Goodbye.

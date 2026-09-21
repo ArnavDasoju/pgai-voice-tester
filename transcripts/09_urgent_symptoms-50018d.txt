@@ -1,0 +1,24 @@
+# Scenario: 09_urgent_symptoms
+# Goal: Book an appointment for your knee.
+# Recording: recordings/09_urgent_symptoms-50018d.ogg
+
+[0:02] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:06] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:16] PATIENT (bot): Um, hi. I have an appointment with Dr. Lukowski on Monday, September 28 at 8:15 AM for knee pain. I wanted to book another appointment.
+[0:27] CLINIC AGENT: I see you're calling from the number we have on file. Am I speaking with Arnav?
+[0:33] PATIENT (bot): Yeah, that's me.
+[0:36] CLINIC AGENT: Please provide your date of birth.
+[0:39] PATIENT (bot): It's August 9th, 2007.
+[0:47] CLINIC AGENT: The birthday you gave doesn't match our record. But for demo purposes, I'll accept it. How can I help with your appointment for knee pain?
+[0:55] PATIENT (bot): Um, actually, since yesterday my calf has been swollen, hot, and painful, and I have had a fever since last night. I think it's kinda urgent. Can I get an appointment for that?
+[1:09] CLINIC AGENT: It sounds like you need to be seen urgently for your new symptoms. You like to book an acute visit for urgent concern?
+[1:17] PATIENT (bot): Yeah, that would be great. When can I get in?
+[1:23] CLINIC AGENT: You already have an acute appointment booked with doctor Zbigniew Lukowski. On Wednesday, September twenty third at one thirty PM. At Pivot Point Orthopedics Since you can't have two of the same type, would you like to move this appointment sooner? Or do you want to talk to our clinic support team about your urgent symptom?
+[1:43] PATIENT (bot): Um, can I just move the appointment sooner? Like, when's the next available time?
+[1:52] CLINIC AGENT: You have an acute appointment with doctor Zbigniew Lukowski. On Wednesday, September twenty third at one thirty PM. I can look for an earlier time for you. Can you tell me the reason you need to move this appointment?
+[2:04] PATIENT (bot): Yeah, it's because my calf is swollen, hot, and painful, and I've had a fever since last night. So, I need to see him sooner.
+[2:13] CLINIC AGENT: The next opening with Doctor. Zbigniew Lukowski is tomorrow, Tuesday, September twenty second at eight AM in Nashville. Would you like to move your appointment to that time?
+[2:25] PATIENT (bot): Yeah, that works for me. Please move it to tomorrow at 8 AM.
+[2:32] CLINIC AGENT: Just to confirm, you want to move your appointment to Tuesday, September twenty second at eight AM with doctor Zbigniew Lukowski in Nashville. Is that correct? Please bring a photo ID and your insurance card to your visit.
+[2:49] PATIENT (bot): Yes, that's correct. I'll bring my photo ID and insurance card. Thanks!
+[2:56] CLINIC AGENT: Your appointment has been moved to tomorrow, Tuesday, September twenty second at eight AM with doctor Zbigniew Lukowski in Nashville.

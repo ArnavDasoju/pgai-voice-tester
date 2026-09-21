@@ -1,0 +1,13 @@
+# Scenario: 05_refill_meloxicam
+# Goal: Get a refill of meloxicam 15 milligrams, one a day, prescribed by Dr. Lukowski, sent to the CVS on Baltimore Avenue.
+# Recording: recordings/05_refill_meloxicam-b3d4d4.ogg
+
+[0:02] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:06] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good. AI. How may I help you today?
+[0:16] PATIENT (bot): Um, hi. I have a knee pain appointment with Dr. Lukowski on Monday, September 28 at 8:15 AM. I need a refill of meloxicam 15 milligrams, one a day. I only have two pills left. Can you send that to CVS on Baltimore Avenue?
+[0:32] CLINIC AGENT: I can help with your request.
+[0:34] CLINIC AGENT: May I have your full name and date of birth?
+[0:37] PATIENT (bot): Yeah, my name is Arnav Dasoju, and my date of birth is August 9th, 2007.
+[0:47] CLINIC AGENT: I don't see any medications on your chart. That I can refill right now. If you'd like, I can connect you to our patient support team for more help. Would you like to speak with someone?
+[0:57] PATIENT (bot): Um, I thought Dr. Lukowski prescribed meloxicam for me. Can you check again? I really need that refill sent to CVS.
+[1:07] CLINIC AGENT: Transferring you now. Thank you.

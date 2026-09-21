@@ -1,0 +1,16 @@
+# Scenario: 04_insurance_update
+# Goal: Update your insurance from Aetna to Blue Cross Blue Shield. Member ID X J H 4 8 2 9 1 5 3 7 0. Group number 8 8 2 1 4.
+# Recording: recordings/04_insurance_update-7e6c7e.ogg
+
+[0:04] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:07] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:16] PATIENT (bot): Um, hi. I need to update my insurance information. I want to change it from Aetna to Blue Cross Blue Shield. My member ID is X J H 4 8 2 9 1 5 3 7 0. Oh, wait, I meant the last three digits are 3 0 7, not 3 7 0. Can you confirm you got that?
+[0:37] CLINIC AGENT: I have your new insurance, as Blue Cross Blue Shield. With member ID x j h four eight two nine one five three zero seven. Is that correct? May I have your full name and date of birth to update your record?
+[0:53] PATIENT (bot): Yeah, that's correct. My name is Arnav Dasoju, and my date of birth is August 9th, 2007.
+[1:06] CLINIC AGENT: There is currently no insurance on file for you. Would you like to receive a text message with a link to upload photos of your Blue Cross Blue Shield insurance card? To your number ending four five eight nine
+[1:21] PATIENT (bot): Um, no, I don't need to upload a photo. Just update it from Aetna to Blue Cross Blue Shield with the details I gave you. Can you do that?
+[1:31] CLINIC AGENT: I am not able to update your insurance verbally. Our team will reach out to collect your Blue Cross Blue Shield details and card. Is there anything else I can help you with today?
+[1:41] PATIENT (bot): Um, no, that's it
+[1:42] CLINIC AGENT: I've noted request to update your insurance to Blue Cross Blue Shield with the member ID you provided. Our clinic support team will follow-up with you soon to complete the update. Is there anything else I can help you with today?
+[1:58] PATIENT (bot): No, that's it. Thank you! Goodbye!
+[2:03] CLINIC AGENT: You're all set? Have a great day.

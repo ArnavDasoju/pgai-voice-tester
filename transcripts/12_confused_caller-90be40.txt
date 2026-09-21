@@ -1,0 +1,21 @@
+# Scenario: 12_confused_caller
+# Goal: You are not sure what you need. Start by asking about a bill you got in the mail, then ask whether your insurance covers physical therapy, then ask if you can get an MRI without seeing a doctor first.
+# Recording: recordings/12_confused_caller-90be40.ogg
+
+[0:03] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:07] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:17] PATIENT (bot): Um, yeah, I got a bill in the mail and I wanted to ask about it. Also, does my insurance cover physical therapy? Oh, and can I get an MRI without seeing a doctor first?
+[0:28] CLINIC AGENT: I'll need to look up your information first. Can you please provide your full name and date of birth?
+[0:35] PATIENT (bot): Sure, my name is Arnav Dasoju, and my date of birth is August 9th, 2007.
+[0:44] CLINIC AGENT: Thanks. Arnav. Let me help with your billing question, physical therapy coverage, and MRI inquiry. First, about your bill.
+[0:52] CLINIC AGENT: Can you tell me what the bill is for or what questions you have about it? I'll also check on physical therapy coverage and MRI requirements after that.
+[1:04] PATIENT (bot): Um, I’m not exactly sure what the bill is for. I just got it and wanted to know if it was related to my upcoming appointment with Dr. Lukowski for my knee pain.
+[1:17] CLINIC AGENT: I'm checking on your billing question now. Please hold for a moment while I document your request for the clinic team I documented your question for our clinic support team. We'll review your bill and let you know if it's related to your upcoming appointment with doctor Lukowski. Now about physical therapy coverage, do you want to know if your insurance covers physical therapy at our clinic? And for the MRI, would you like to know if you can get one scheduled without seeing a doctor here first?
+[1:48] PATIENT (bot): Yeah, I just wanna know if my insurance covers physical therapy at your clinic. And yeah, can I get the MRI without seeing a doctor first?
+[2:00] CLINIC AGENT: I'll check your insurance coverage for physical therapy and clarify the MRI process. First, do you know which insurance plan you have on file with us, or have you changed your insurance recently? This helps me give you the most accurate answer.
+[2:14] PATIENT (bot): I have Aetna insurance. I haven't changed anything recently.
+[2:20] CLINIC AGENT: Thanks for letting me go. To check your physical therapy coverage, I'll need your Aetna member ID number from your insurance card. Can you provide that?
+[2:29] PATIENT (bot): Um, I don't have my insurance card with me right now. Is there another way to check the coverage without it?
+[2:37] CLINIC AGENT: I need your member ID to check your specific coverage details. Without it, I can only give general info. Most Aetna plans do cover physical therapy, but coverage and costs can vary. If you find your card later, I can check your exact benefits Would you like to move on to your MRI question?
+[2:57] PATIENT (bot): Yeah, let’s move on to the MRI. Can I get one scheduled without seeing a doctor first?
+[3:04] CLINIC AGENT: At our clinic,

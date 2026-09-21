@@ -1,0 +1,16 @@
+# Scenario: 03_hours_location
+# Goal: Find out the office hours, whether they are open on Saturdays, the address, and whether there is parking.
+# Recording: recordings/03_hours_location-cf3e39.ogg
+
+[0:04] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:07] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:17] PATIENT (bot): Um, yeah so, I wanted to know the office hours and the address. Are you open on Saturdays?
+[0:26] CLINIC AGENT: Pivot Point Orthopedics is open Monday through Friday. We are closed on Saturdays. Would you like the full address and weekday hours?
+[0:34] PATIENT (bot): Yeah, could you tell me the full address and the weekday hours, please?
+[0:41] CLINIC AGENT: The clinic is located at one two three four Recovery Way, suite two hundred, Austin. Our hours are nine AM to four PM on Monday, Tuesday, and Thursday, twelve PM to seven PM on Wednesday. And nine AM to twelve PM on Friday. Let me know if you need anything else.
+[0:59] PATIENT (bot): Thanks for that. Is there parking available at the clinic?
+[1:05] CLINIC AGENT: Yes. There is free patient parking available in the surface lot. In front of the building.
+[1:10] PATIENT (bot): Cool, thanks for the info. Um, just one more thing, what should I bring for my appointment on Monday?
+[1:18] CLINIC AGENT: For your appointment, bring a photo ID, your insurance card, a list of current medications, and any relevant medical records or imaging. If you have questions about paperwork or forms, let me know.
+[1:34] PATIENT (bot): Got it, thanks! That's all I needed. Bye!
+[1:39] CLINIC AGENT: Take care. If you need anything else, just give us a call.

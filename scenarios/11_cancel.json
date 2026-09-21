@@ -1,4 +1,5 @@
 {
-  "goal": "Cancel your upcoming knee appointment because the pain went away.",
+  "context": "You have one upcoming knee appointment with Dr. Lukowski. It was moved recently and you don't remember the exact date or time.",
+  "goal": "Cancel your upcoming knee appointment, whatever date it is on now, because the pain went away.",
   "twist": "After they cancel it, ask whether there is a cancellation fee."
 }

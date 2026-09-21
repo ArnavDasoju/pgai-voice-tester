@@ -1,0 +1,26 @@
+# Scenario: 07_wrong_dob
+# Goal: Confirm the date and time of your upcoming appointment.
+# Recording: recordings/07_wrong_dob-e2fbdf.ogg
+
+[0:03] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:07] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:16] PATIENT (bot): Um, hi. I just want to confirm my appointment with Dr. Lukowski for my knee pain. It's on Monday, September 28 at 8:15 AM. Can you help me with that?
+[0:27] CLINIC AGENT: Can I have your full name and date of birth, please?
+[0:32] PATIENT (bot): Sure, my name is Arnav Dasoju, and my date of birth is January 1st, 1990.
+[0:44] CLINIC AGENT: I have your name as Arnav Desogio, and your date of birth is January first nineteen ninety.
+[0:49] CLINIC AGENT: Could you please spell out your first and last name to make sure I have it correct?
+[0:54] PATIENT (bot): Yeah, it’s A-R-N-A-V D-A-S-O-J-U. And my date of birth is January 1st, 1990.
+[1:06] CLINIC AGENT: Would you like me to look up your record using your phone number? If so, please provide the number you have on file with us.
+[1:12] CLINIC AGENT: If you're not sure, I can confirm your name and date of birth again. Which would you prefer?
+[1:18] PATIENT (bot): Uh, I think looking it up with my phone number is fine. My phone number is (762) 247-4589.
+[1:31] CLINIC AGENT: I have your phone number as seven six two two four seven four five eight nine and your date of birth,
+[1:38] CLINIC AGENT: as January first nineteen ninety.
+[1:41] CLINIC AGENT: Is that correct?
+[1:43] PATIENT (bot): Um, yeah, I mean my date of birth is January 1st, 1990. Can you confirm my appointment?
+[1:52] CLINIC AGENT: I'm unable to find a matching record for you in our system. I can connect you to our patient support team. I can also help with booking, rescheduling, or canceling appointments, medication refills. Insurance updates, and general clinic questions.
+[2:06] CLINIC AGENT: Would you like to give me a try?
+[2:09] PATIENT (bot): Um, no thanks. I just really want to confirm my appointment with Dr. Lukowski for September 28 at 8:15 AM. Can you check that again?
+[2:20] CLINIC AGENT: I'm not able to find your record in our system. So I can't confirm your appointment right now. I can connect you to our patient support team for further help. Would you like me to do that?
+[2:31] PATIENT (bot): Uh, I think I'll call back about it. Thanks for your help. Goodbye!
+[2:38] CLINIC AGENT: You're welcome.
+[2:39] CLINIC AGENT: If you need anything else

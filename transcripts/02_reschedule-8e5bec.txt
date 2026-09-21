@@ -1,0 +1,26 @@
+# Scenario: 02_reschedule
+# Goal: Move your Monday September 28 8:15 AM knee appointment to an afternoon later that same week, ideally Wednesday or Thursday.
+# Recording: recordings/02_reschedule-8e5bec.ogg
+
+[0:03] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:06] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:17] PATIENT (bot): Um, hi. I have a knee pain appointment with Dr. Lukowski on Monday, September 28 at 8:15 AM. I need to move it to the afternoon, maybe Wednesday or Thursday. Can you help me with that?
+[0:32] CLINIC AGENT: I see you're calling from a number we have on file. Am I speaking with Arnav?
+[0:38] PATIENT (bot): Yeah, that's me. My date of birth is August 9th, 2007.
+[0:48] CLINIC AGENT: Have an appointment for knee pain with doctor Zbigniew Lukowski on Monday, September eighth. At eight fifteen AM in Nashville. I'll look for afternoon openings on Wednesday or Thursday. Can you tell me the reason you need to reschedule?
+[1:03] PATIENT (bot): Um, I just have a scheduling conflict. I really need to move it to the afternoon. What times do you have?
+[1:11] CLINIC AGENT: There are three afternoon openings with Doctor. Lukowski in on Wednesday. September twenty third. The next opening is at one PM, Would you like to move your appointment to that time or hear the other options?
+[1:24] PATIENT (bot): Um, can I hear the other options?
+[1:29] CLINIC AGENT: The next available time after one PM is one fifteen PM on Wednesday, September twenty third. Would you like to move your appointment to one fifteen PM? Or would you like to hear the last option?
+[1:41] PATIENT (bot): What's the last option?
+[1:45] CLINIC AGENT: The last opening is at one thirty PM on Wednesday, September twenty third. Would you like to move your appointment to one thirty PM? Or do you want to pick one of the earlier times?
+[1:57] PATIENT (bot): Um, let's go with one fifteen PM.
+[2:01] CLINIC AGENT: Just to confirm, you'd like to move your knee pain appointment with doctor Zbigniew Lukowski to Wednesday, September twenty third at one fifteen PM in Nashville. Is that correct?
+[2:13] PATIENT (bot): Actually, can we switch that to one thirty PM instead?
+[2:19] CLINIC AGENT: No problem. To confirm, you want to move your appointment to Wednesday, September twenty third at one thirty PM with doctor Zbigniew Lukowski in Nashville. Is that right?
+[2:31] PATIENT (bot): Yeah, that's right. Thanks! Just one quick thing, what should I bring to the appointment?
+[2:38] CLINIC AGENT: For your in person visit, please bring a government issued photo ID and your insurance card. Copies are not accepted, so be sure to bring the original.
+[2:47] PATIENT (bot): Okay, got it.
+[2:48] CLINIC AGENT: Your
+[2:50] PATIENT (bot): Alright, thanks for your help. Goodbye!
+[2:55] CLINIC AGENT: Your appointment is now set for Wednesday, September twenty third at one thirty PM with doctor Zbigniew Lukowski in Nashville, for your visit. Bring a photo ID,

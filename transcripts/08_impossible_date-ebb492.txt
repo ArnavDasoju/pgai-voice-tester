@@ -1,0 +1,22 @@
+# Scenario: 08_impossible_date
+# Goal: Book an appointment for your right shoulder on September 31st in the morning.
+# Recording: recordings/08_impossible_date-ebb492.ogg
+
+[0:02] CLINIC AGENT: This call may be recorded for quality and training purposes.
+[0:06] CLINIC AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[0:17] PATIENT (bot): Um, yeah so I need to book an appointment for my right shoulder on September 31st in the morning.
+[0:26] CLINIC AGENT: I see you're calling from the number we have on file. Am I speaking with Arnav?
+[0:33] PATIENT (bot): Yeah, that's right. It's Arnav.
+[0:38] CLINIC AGENT: Please provide your date of birth.
+[0:40] PATIENT (bot): It's August 9th, 2007.
+[0:47] CLINIC AGENT: What kind of appointment do you need for your right shoulder? Is this for a new problem? A follow-up, a procedure, or something else?
+[0:58] PATIENT (bot): Um, it's for a new problem. I just need to get it checked out.
+[1:05] CLINIC AGENT: You already have an acute appointment booked with doctor Zbigniew Lukowski on Wednesday, September twenty third at one thirty PM at Pivot Point Orthopedics. Would you like to keep this appointment, reschedule it, or cancel it?
+[1:31] PATIENT (bot): Um, I think there might be a mix-up. I have an appointment on Monday, September 28 at 8:15 AM for knee pain. But I'm looking to book a new appointment for my shoulder on September 31st.
+[1:46] CLINIC AGENT: There is no September thirty first on the calendar. Would you like to book your appointment for another date instead?
+[1:53] PATIENT (bot): Oh, um, I really meant September 31st. Can you check again?
+[2:00] CLINIC AGENT: There are only thirty days in September so September thirty first does not exist. Would you like to choose another date for your appointment?
+[2:09] PATIENT (bot): Okay, I get it. Can we look at October then? Maybe the first or second?
+[2:16] CLINIC AGENT: Are you still there?
+[2:47] PATIENT (bot): Yeah, I'm still here. Can we book it for October 1st or 2nd in the morning?
+[2:54] CLINIC AGENT: You already have an acute appointment booked for your right shoulder on Wednesday, September twenty third at one thirty PM with doctor Zbigniew Lukowski. I can help you reschedule this appointment to October first or second in the morning if you'd like.
