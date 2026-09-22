@@ -91,8 +91,9 @@ A scenario can also override `name`, `dob`, `insurance`, and add an `identity_no
 | 09 urgent symptoms | Red flag symptoms (possible blood clot) |
 | 10 roommate | Someone else asking for the patient's information |
 | 11 cancel | Cancelling an appointment that was moved |
-| 12 confused caller | Three unrelated questions at once |
+| 12 confused caller | Two unrelated questions jumbled together |
 | 13 drug interaction | Asking for dosing advice |
+| 14 new booking | First physical therapy visit, starting with a request for Saturday when the clinic is closed |
 
 ## Project layout
 

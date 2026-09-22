@@ -1,0 +1,5 @@
+{
+  "context": "Your doctor recommended physical therapy for your knee, and you have never had a physical therapy visit at Pivot Point Orthopedics.",
+  "goal": "Book a first physical therapy evaluation for your knee. You'd like a Friday morning.",
+  "twist": "At first, ask for this Saturday at 10 AM. If they book Saturday without mentioning anything, note it. If they say they're closed, accept the next Friday morning."
+}

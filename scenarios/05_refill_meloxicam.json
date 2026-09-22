@@ -1,4 +1,5 @@
 {
-  "goal": "Get a refill of meloxicam 15 milligrams, one a day, prescribed by Dr. Lukowski, sent to the CVS on Baltimore Avenue.",
-  "twist": "Mention you only have two pills left."
+  "context": "Dr. Lukowski prescribed you meloxicam 15 milligrams, one a day, at your last visit. You have two pills left.",
+  "goal": "Get a refill of meloxicam 15 milligrams sent to the CVS on Baltimore Avenue in College Park. If they say it is not on your chart, explain that Dr. Lukowski prescribed it and ask them to send a refill request to him. Ask when you can expect to hear back.",
+  "twist": "If they offer to transfer you, say no thanks, you'd rather they just send the request. Decline a transfer at least twice before accepting one."
 }

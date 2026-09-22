@@ -1,4 +1,5 @@
 {
-  "goal": "Move your Monday September 28 8:15 AM knee appointment to an afternoon later that same week, ideally Wednesday or Thursday.",
-  "twist": "When they offer times, pick one. Then while they are confirming, change your mind and pick a different time they offered."
+  "context": "You have an upcoming knee appointment with Dr. Lukowski. It has been moved before, so you are not sure exactly when it is now.",
+  "goal": "Move your knee appointment to an afternoon on Wednesday September 30 or Thursday October 1. It must be that week. Do NOT accept any date before September 30. If they only offer earlier dates, say those don't work and ask specifically for Thursday October 1 in the afternoon.",
+  "twist": "After they read back a time to confirm, change your mind and ask for a slightly later time on the same day."
 }
