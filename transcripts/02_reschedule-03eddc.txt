@@ -1,0 +1,22 @@
+# Scenario: 02_reschedule
+# Goal: Move your knee appointment to an afternoon on Wednesday September 30 or Thursday October 1. It must be that week. Do NOT accept any date before September 30. If they only offer earlier dates, say those don't work and ask specifically for Thursday October 1 in the afternoon.
+# Recording: recordings/02_reschedule-03eddc.ogg
+
+[0:04] CLINIC AGENT: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI, How may I help you today?
+[0:17] PATIENT (bot): Um, hi. I have an appointment with Dr. Lukowski for my knee, but I'm not sure when it is. Can you help me with that?
+[0:27] CLINIC AGENT: I see you're calling from the number we have on file. Am I speaking with?
+[0:32] PATIENT (bot): Yeah, this is Arnav Dasoju. My date of birth is August 9th, 2007.
+[0:43] CLINIC AGENT: The birthday doesn't match our records. But for demo purposes, I'll accept it. Me check your upcoming appointments. You have an appointment scheduled for tomorrow, Tuesday, September twenty second, at eight AM with doctor Zbigniew Lukowski. Would you like me to send you a text reminder with these details?
+[1:06] PATIENT (bot): Um, no, that time doesn't work for me. I’d like to move it to an afternoon on either Wednesday, September 30 or Thursday, October 1. Can you do that?
+[1:22] CLINIC AGENT: There are openings with Doctor. Lukowski on Wednesday, September thirtieth in the afternoon. The next opening is at one PM at the Nashville location, Would you like to move your appointment to that time?
+[1:35] PATIENT (bot): Um, actually, could you change that to a slightly later time on Thursday, October 1?
+[1:43] CLINIC AGENT: The next opening with Lukowski on Thursday, October first, is at one PM at the Nashville location. There are also times at one fifteen and one thirty PM. Would you like to move your appointment to one fifteen or one thirty PM?
+[2:02] PATIENT (bot): Let's do one thirty PM on Thursday, October 1. 
+[2:07] CLINIC AGENT: Got it. Can you tell me the reason you need to reschedule your appointment?
+[2:11] PATIENT (bot): Um, I just have a scheduling conflict. That's why I needed to change it. 
+[2:18] CLINIC AGENT: Thanks for letting me know. To confirm, you want to move your appointment with doctor Lukowski to Thursday, October first at one thirty PM at the National location. Is that correct?
+[2:30] PATIENT (bot): Yeah, that's right. One thirty PM on October 1. 
+[2:36] CLINIC AGENT: Your appointment will be moved to Thursday, October first at one thirty PM with doctor at the Nashville location. Please remember to bring a photo ID and your insurance card to your visit. Is there anything else I can help you with today?
+[2:50] PATIENT (bot): Um, no, that's
+[3:05] PATIENT (bot): Sorry, I've gotta
+[2:50] CLINIC AGENT: Your appointment with doc is now set for Thursday, October first at one thirty PM at the Nashville location. Would you like a text message with these details?

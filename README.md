@@ -113,6 +113,6 @@ About $0.10 to $0.15 per 3 minute call across Twilio, Deepgram, OpenAI, and Cart
 
 ## Safety limits
 
-* Calls are capped at 3 minutes. The bot is told to wrap up at 2:20 and hangs up at 3:05 if it hasn't already.
+* Calls are capped at 3 minutes. The bot is told to wrap up at 2:00 and hangs up at 2:55 if it hasn't already.
 * The bot can't end a call before 60 seconds, so it can't give up early.
 * It only ever dials `TARGET_PHONE_NUMBER`.

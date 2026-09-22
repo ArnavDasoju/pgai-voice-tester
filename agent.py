@@ -49,8 +49,8 @@ SAMPLE_RATE = 24000
 
 # Call length targets (the brief asks for full conversations, typically 1 to 3 minutes).
 MIN_CALL_SECONDS = 60     # end_call refuses to hang up before this
-WRAP_UP_AFTER = 140       # tell the bot to start wrapping up
-HARD_STOP_AFTER = 185     # say a quick goodbye and hang up no matter what
+WRAP_UP_AFTER = 120       # tell the bot to start wrapping up
+HARD_STOP_AFTER = 175     # say a quick goodbye and hang up no matter what
 
 # Names Deepgram kept mangling. Keyterm prompting makes Nova-3 expect them.
 KEYTERMS = ["Pivot Point Orthopedics", "Zbigniew Lukowski", "Lukowski", "Kelly Noble"]
@@ -60,6 +60,7 @@ HOLD_PHRASES = (
     "one moment", "one sec", "just a moment", "just a second", "let me check",
     "let me look", "let me pull", "let me see", "hold on", "bear with me",
     "give me a moment", "give me a second", "please hold", "while i check",
+    "may be recorded", "recorded for quality",
 )
 
 WRAP_UP_NOTE = """
@@ -159,6 +160,8 @@ Your goal on this call: {p['goal']}
 
 How you talk:
 - You are the caller, not an assistant. Never offer to help. You need something.
+- Open like a real caller: one short sentence about why you're calling. Don't recite dates,
+  times, doctor names or personal details up front. Share them only when asked or needed.
 - Short, casual spoken sentences. Sometimes start with "um" or "yeah so".
 - Never read lists out loud and never use markdown or emojis.
 - If they are vague or dodge your question, push once and ask again plainly.
@@ -201,7 +204,7 @@ class PatientAgent(Agent):
 
 
 async def call_timer(session: AgentSession, patient: PatientAgent, ctx: JobContext):
-    """Nudge the bot to wrap up around 2:20, and hang up at about 3 minutes no matter what."""
+    """Nudge the bot to wrap up around 2:00, and hang up just before 3 minutes no matter what."""
     try:
         await asyncio.sleep(WRAP_UP_AFTER)
         logger.info("time check: telling the patient to wrap up")
@@ -209,6 +212,10 @@ async def call_timer(session: AgentSession, patient: PatientAgent, ctx: JobConte
 
         await asyncio.sleep(HARD_STOP_AFTER - WRAP_UP_AFTER)
         logger.info("hit the time limit, hanging up")
+        for _ in range(25):  # wait up to 5s so we never cut the clinic off
+            if getattr(session, "user_state", None) != "speaking":
+                break
+            await asyncio.sleep(0.2)
         await session.say("Sorry, I've gotta run. Thanks for your help, bye.")
         await ctx.api.room.delete_room(api.DeleteRoomRequest(room=ctx.room.name))
     except Exception:
@@ -287,9 +294,7 @@ async def entrypoint(ctx: JobContext):
     await session.start(
         room=ctx.room,
         agent=patient,
-        room_options=room_io.RoomOptions(
-            audio_input=room_io.AudioInputOptions(noise_cancellation=noise_cancellation.BVCTelephony()),
-        ),
+        # No noise cancellation: the clinic audio is clean, and the model competed for CPU with our speech.
     )
     # No greeting here on purpose. The clinic's agent answers first, like a real call.
 
@@ -300,4 +305,4 @@ async def entrypoint(ctx: JobContext):
 
 
 if __name__ == "__main__":
-    cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint, agent_name="patient-bot"))
+    cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint, agent_name="patient-bot", num_idle_processes=1))
