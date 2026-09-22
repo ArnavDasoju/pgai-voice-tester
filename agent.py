@@ -1,4 +1,5 @@
 import asyncio
+from datetime import date
 import json
 import logging
 import os
@@ -25,7 +26,7 @@ from livekit.agents import (
     room_io,
 )
 from livekit.agents.llm import ChatContext, ChatMessage
-from livekit.plugins import cartesia, deepgram, noise_cancellation, openai, silero
+from livekit.plugins import cartesia, deepgram, openai, silero
 
 load_dotenv(".env.local")
 logger = logging.getLogger("patient-bot")
@@ -145,7 +146,8 @@ def build_prompt(p: dict) -> str:
     if p.get("insurance"):
         details.append(f"insurance {p['insurance']}")
 
-    return f"""You are {p['name']}, calling {p['clinic']} on the phone.
+    return f"""Today is {date.today():%A, %B %d, %Y}.
+You are {p['name']}, calling {p['clinic']} on the phone.
 Your details, only share them when asked: {', '.join(details) or 'none'}.
 {p.get('identity_note', '')}
 
@@ -180,6 +182,7 @@ class PatientAgent(Agent):
     def __init__(self, persona: dict):
         super().__init__(instructions=build_prompt(persona))
         self.call_started = None  # set when the clinic answers
+        self.log_skipped = None  # writes clinic lines we chose not to answer into the transcript
 
     async def on_user_turn_completed(self, turn_ctx: ChatContext, new_message: ChatMessage) -> None:
         # The "user" here is the clinic agent. If it just said "one moment" it is still working,
@@ -188,6 +191,8 @@ class PatientAgent(Agent):
         sentences = [s for s in re.split(r"(?<=[.!?])\s+", text) if s]
         last = sentences[-1] if sentences else ""
         if last and not last.endswith("?") and any(p in last for p in HOLD_PHRASES):
+            if self.log_skipped:
+                self.log_skipped(new_message.text_content)
             raise StopResponse()
 
     @function_tool
@@ -216,7 +221,7 @@ async def call_timer(session: AgentSession, patient: PatientAgent, ctx: JobConte
             if getattr(session, "user_state", None) != "speaking":
                 break
             await asyncio.sleep(0.2)
-        await session.say("Sorry, I've gotta run. Thanks for your help, bye.")
+        await session.say("Sorry, I've gotta run. Thanks for your help, bye.", allow_interruptions=False)
         await ctx.api.room.delete_room(api.DeleteRoomRequest(room=ctx.room.name))
     except Exception:
         pass  # call already ended
@@ -270,20 +275,31 @@ async def entrypoint(ctx: JobContext):
         if ev.new_state == "speaking":
             speech_start["assistant"] = time.monotonic()
 
-    @session.on("conversation_item_added")
-    def log_turn(ev):
-        role = getattr(ev.item, "role", None)
-        if role not in ("user", "assistant"):
-            return
+    last_clinic_line = {"text": None}
+
+    def write_line(role, text):
+        text = (text or "").strip()
+        if role == "user" and text and text == last_clinic_line["text"]:
+            return  # already written when the bot chose not to reply
         started = speech_start[role] or time.monotonic()
-        speech_start[role] = None
+        speech_start[role] = None  # always reset so the next line gets its own start time
+        if not text:
+            return
+        if role == "user":
+            last_clinic_line["text"] = text
         elapsed = started - clock_start
         stamp = f"{int(elapsed // 60)}:{int(elapsed % 60):02d}"
         speaker = "PATIENT (bot)" if role == "assistant" else "CLINIC AGENT"
-        line = f"[{stamp}] {speaker}: {ev.item.text_content}"
+        line = f"[{stamp}] {speaker}: {text}"
         logger.info(line)
         with transcript_path.open("a") as f:
             f.write(line + "\n")
+
+    @session.on("conversation_item_added")
+    def log_turn(ev):
+        role = getattr(ev.item, "role", None)
+        if role in ("user", "assistant"):
+            write_line(role, ev.item.text_content)
 
     # When the call ends for any reason, shut the job down so the recording gets saved.
     @session.on("close")
@@ -291,6 +307,7 @@ async def entrypoint(ctx: JobContext):
         ctx.shutdown(reason="call ended")
 
     patient = PatientAgent(persona)
+    patient.log_skipped = lambda text: write_line("user", text)
     await session.start(
         room=ctx.room,
         agent=patient,
@@ -301,7 +318,7 @@ async def entrypoint(ctx: JobContext):
     # Start the call clock when the clinic actually picks up.
     await ctx.wait_for_participant(identity="clinic-agent")
     patient.call_started = time.monotonic()
-    asyncio.create_task(call_timer(session, patient, ctx))
+    patient.timer_task = asyncio.create_task(call_timer(session, patient, ctx))  # keep a reference so it isn't garbage collected
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
   "context": "You have an upcoming knee appointment with Dr. Lukowski. It has been moved before, so you are not sure exactly when it is now.",
-  "goal": "Move your knee appointment to an afternoon on Wednesday September 30 or Thursday October 1. It must be that week. Do NOT accept any date before September 30. If they only offer earlier dates, say those don't work and ask specifically for Thursday October 1 in the afternoon.",
+  "goal": "Move your knee appointment to a weekday morning next week. Do NOT accept anything this week or in the afternoon. If they offer something that doesn't fit, say it doesn't work and ask again for a morning next week. If they can't find any upcoming appointment, book a new one in that window instead.",
   "twist": "After they read back a time to confirm, change your mind and ask for a slightly later time on the same day."
 }
