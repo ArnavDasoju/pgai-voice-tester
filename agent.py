@@ -175,6 +175,7 @@ Call length:
 
 Ending the call:
 - When your goal is done or clearly blocked, say a short natural goodbye, then call the end_call tool.
+- Hang up only by calling the tool. Never write end_call, tags, or anything in angle brackets.
 """
 
 
@@ -278,7 +279,7 @@ async def entrypoint(ctx: JobContext):
     last_clinic_line = {"text": None}
 
     def write_line(role, text):
-        text = (text or "").strip()
+        text = re.sub(r"<[^>]*>", "", text or "").strip()  # drop any leaked tool tags
         if role == "user" and text and text == last_clinic_line["text"]:
             return  # already written when the bot chose not to reply
         started = speech_start[role] or time.monotonic()
